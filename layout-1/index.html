@@ -1,0 +1,148 @@
+<!--Commento HTML-->
+<!--Meta informazioni-->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Web Developer</h1>
+    <h2> PRO Web Developer</h2> 
+    <!--Div con Paragrafo-->
+    <div id="my-box">
+        elemento con ID "my box"
+        <p>testo del paragrafo</p>
+    </div>
+    <!--Rimandi a capo e separazioni -->
+    <a href="https://www.youtube.com/" target="_blank" title="Vai su Youtube">YOUTUBE</a>
+    <br><br>
+    testo
+    <hr>
+    testo successivo
+    <!--Liste-->
+    <ul>
+        <li>lista non ordinata</li>
+        <li>lista non ordinata</li>
+        <li>lista non ordinata</li>
+        <li>lista non ordinata</li>
+    </ul>
+
+    <ol>
+        <li>lista ordinata</li>
+        <li>lista ordinata</li>
+        <li>lista ordinata</li>
+        <li>lista ordinata</li>
+    </ol>
+    <!--Tabelle-->
+    <table>
+        <caption>PRO web developer</caption>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>nome</th>
+                <th>cognome</th>
+            </tr>   
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mario</td>
+                <td>Rossi</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Luigi</td>
+                <td>Verdi</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>PRO</td>
+                <td>Web</td>
+                <td>Developer</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--Semantica e sezionameto-->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/about">About</a>
+    </nav>
+    <section>
+        <h1>Blog</h1>
+        <article>
+            <header>titolo dell'articolo 1</header>
+            <div>testo dell'articolo 1</div>
+            <footer>informazioni dell'articolo 1</footer>
+        </article>
+        <article>
+            <header>titolo dell'articolo 2</header>
+            <div>testo dell'articolo 2</div>
+            <footer>informazioni dell'articolo 2</footer>
+        </article>
+    </section>
+    <aside>
+        informazioni correlate al blog
+    </aside>
+    <!--Citazioni-->
+    <p>
+        Un famoso <abbr title="National Basketball Association">NBA</abbr>
+        player una volta disse:
+        <q>"sono convinto che non ci sia nulla di impossibile. Voglio provare a fare qualcosa di diverso."</q>
+        Questa citazione è tratta dal libro di <cite>The Mind of a Champion</cite>
+        scritto da Michael Jordan.
+    </p>
+    <blockquote>
+        <p>Il designe è una semplice questione di giudizio</p>
+        <cite>Steve Jobs</cite>
+    </blockquote>
+    <!--Form e input-->
+    <form method="post" action="/server">
+        <fieldset>
+            <legend>Dati personali:</legend>
+
+            <label for="name">Nome</label>
+            <input type="text" id="name">
+
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail">
+
+            <label for="password">Password</label>
+            <input type="password" id="password">
+
+            <label for="text">Bio</label>
+            <textarea rows="10" id="text"></textarea>
+        </fieldset>
+
+        <label for="level">Livello</label>
+        <input type="range" id="level" min="1" max="10">
+
+        <label for="date">Data</label>
+        <input type="datetime-local" id="date">
+
+        <input type="hidden" id="additional" value="100">
+
+        <button type="submit">Invia</button>
+    </form>
+    <!--Iframe-->
+    <iframe src="index.html" title="Developers"></iframe>
+    <!--Contenuti multimediali-->
+    <audio controls>
+        <source src="audio1.ogg" type="audio/ogg">
+        <source src="audio1.mp3" type="audio/mpeg">
+        Audio non supportato
+    </audio>
+
+    <video width="400" height="400" controls>
+        <source src="video1.mp4" type="video/mp4">
+        <source src="video1.ogg" type="video/ogg">
+        Video non supportato
+    </video>
+
+    <object data="index.html"></object>
+    <embed src="img1.png">
+</body>
+</html>
